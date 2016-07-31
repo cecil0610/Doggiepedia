@@ -1,45 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('template.template1')
+@section('title')
+	Welcome to DoggiePedia!
+@endsection
+@section('customStyle')
+	<link href="css/welcome.css" rel="stylesheet">
+@endsection
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@section('content')
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+<a href='incidence' id='navigationButton'>
+	<button>
+		Know More
+	</button>
+</a>
+<div class='page-wrapper'>
+	<div class="col-sm-4" colNum='1'>
+		<img src="img/welcome/welcome1.jpg" alt="">
+		<div class="content">
+			<div class="background">
+				<br>
+				<h1>The love to dogs and number</h1>
+				<p>point1</p>
+				<p>point2</p>
+				<p>point3</p>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4" id="textContainer2">
+		incidence each year 
+	</div>
+	<div class="col-sm-4" id="textContainer3">
+		promotional slogan
+	</div>
+</div>
+@endsection
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('customFunction')
+	
+@endsection
