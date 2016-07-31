@@ -1,0 +1,20 @@
+table {
+	margin: 0px auto;
+}
+
+tr {
+	border: 2px solid blue;
+	text-align: center;
+	display: table-row;
+}
+
+td {
+	border: 1px solid red;
+	width: 20%;
+	font-size: larger;
+	display: table-cell;
+}
+
+#page-wrapper {
+	text-align: center;
+}
